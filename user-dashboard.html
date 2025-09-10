@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- เพิ่ม -->
+<link rel="stylesheet" href="style.css"> <!-- เพิ่ม -->
+
+<head><meta charset="utf-8"><title>เมนหลักผู้ใช้</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <div class="container">
+    <header><h1>เมนหลัก</h1><div id="hdr_user"></div></header>
+
+    <div class="row">
+      <div class="col">
+        <h3>งานของฉัน</h3>
+        <p><a class="button" href="leave-form.html">ยื่นคำขอลา</a></p>
+        <p><a class="button" href="my-leaves.html">ดูประวัติการลา</a></p>
+      </div>
+      <div class="col">
+        <h3>เมนูสำหรับผู้ที่มีหลายบทบาท</h3>
+        <p class="small">ถ้าบัญชีของคุณมีบทบาทพิเศษ (หัวหน้า/พี่เลี้ยง/แอดมิน) จะมีหน้าอนุมัติให้เข้าถึง</p>
+        <p><a class="button" href="mentor-dashboard.html">พี่เลี้ยง</a> <a class="button" href="supervisor-dashboard.html">หัวหน้า</a> <a class="button" href="admin-dashboard.html">แอดมิน</a></p>
+      </div>
+    </div>
+
+    <p class="footer"><a href="#" onclick="logout()">Logout</a></p>
+  </div>
+  <script src="app.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', renderUserDashboard);</script>
+</body>
+</html>

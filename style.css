@@ -1,0 +1,50 @@
+*{box-sizing:border-box;font-family: "Noto Sans Thai", Arial, sans-serif}
+body{margin:0;background:#f5f7fb;color:#111;padding:18px}
+.container{max-width:1000px;margin:0 auto;background:#fff;padding:18px;border-radius:10px;box-shadow:0 8px 24px rgba(16,24,40,0.06)}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+h1,h2,h3{margin:6px 0}
+nav a{margin-right:12px;color:#1464d8;text-decoration:none}
+.button, button{background:#1464d8;color:#fff;padding:8px 12px;border-radius:6px;border:none;cursor:pointer;text-decoration:none}
+.form-row{margin:10px 0}
+input,select,textarea{width:100%;padding:8px;border:1px solid #e6eef6;border-radius:6px;background:#fff}
+textarea{min-height:100px}
+.table{width:100%;border-collapse:collapse;margin-top:12px}
+.table th,.table td{border:1px solid #eef4fb;padding:8px;text-align:left}
+.badge{display:inline-block;padding:4px 8px;border-radius:12px;background:#eef5ff;color:#053a8a;font-size:0.9rem}
+.small{font-size:0.9rem;color:#666}
+.status-pending{color:#b06b00}
+.status-approved{color:#137333}
+.status-rejected{color:#b02a37}
+.row{display:flex;gap:12px}
+.col{flex:1}
+.footer{margin-top:12px;color:#666}
+.controls{display:flex;gap:8px;align-items:center}
+@media(max-width:800px){.row{flex-direction:column}}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ปรับสำหรับมือถือ */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .container {
+    padding: 10px;
+  }
+}
+

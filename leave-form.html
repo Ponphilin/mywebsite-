@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- เพิ่ม -->
+<link rel="stylesheet" href="style.css"> <!-- เพิ่ม -->
+
+<head><meta charset="utf-8"><title>ฟอร์มการลา</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <div class="container">
+    <header><h1>ฟอร์มการลา</h1><div id="hdr_user"></div></header>
+
+    <form onsubmit="leaveSubmit(event)">
+      <div class="form-row"><label>ประเภทการลา</label>
+        <select id="leave_category">
+          <option>ลาป่วย</option>
+          <option>ลากิจ</option>
+          <option>ลาพักร้อน</option>
+          <option>ลาอื่น ๆ</option>
+        </select>
+      </div>
+      <div class="form-row"><label>วันที่เริ่ม</label><input id="start_date" type="date" required></div>
+      <div class="form-row"><label>วันที่สิ้นสุด</label><input id="end_date" type="date" required></div>
+      <div class="form-row"><label>เหตุผล</label><textarea id="reason"></textarea></div>
+      <div class="form-row"><button class="button" type="submit">ส่งคำขอ</button> <a href="user-dashboard.html">ยกเลิก</a></div>
+    </form>
+
+  </div>
+  <script src="app.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', ()=>renderHeader('hdr_user'));</script>
+</body>
+</html>

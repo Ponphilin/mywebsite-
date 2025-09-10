@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- เพิ่ม -->
+<link rel="stylesheet" href="style.css"> <!-- เพิ่ม -->
+
+<head><meta charset="utf-8"><title>สมัครสมาชิก</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <div class="container">
+    <header><h1>สมัครใช้งาน</h1></header>
+    <form onsubmit="registerSubmit(event)">
+      <div class="form-row"><label>ชื่อผู้ใช้</label><input id="reg_username" required></div>
+      <div class="form-row"><label>รหัสผ่าน</label><input id="reg_password" type="password" required></div>
+      <div class="form-row"><label>บทบาท (กด Ctrl/Command เพื่อเลือกหลายค่า)</label>
+        <select id="reg_roles" multiple>
+          <option value="employee">พนักงาน</option>
+          <option value="intern">นักศึกษาฝึกงาน</option>
+          <option value="contract">พนักงานจ้างเหมา</option>
+          <option value="mentor">พี่เลี้ยง</option>
+          <option value="supervisor">หัวหน้าส่วน</option>
+          <option value="admin">แอดมิน</option>
+        </select>
+      </div>
+      <div class="form-row"><label>หน่วยงาน/แผนก (ถ้ามี)</label><input id="reg_dept"></div>
+      <div class="form-row"><button class="button" type="submit">สมัคร</button> <a href="index.html">กลับหน้าเข้าสู่ระบบ</a></div>
+    </form>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
